@@ -35,7 +35,7 @@ if [ "$1" = 'rsync_server' ]; then
     [data]
         uid = root
         gid = root
-        hosts deny = *
+        # hosts deny = * 
         hosts allow = ${ALLOW}
         read only = false
         path = ${VOLUME}
